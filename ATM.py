@@ -1,8 +1,6 @@
-while True():
 PIN=1234
 print("welcome to ATM")
 print("Insert card Here")
-transaction=[]
 inserted=int(input("1-Yes,0-No"))
 if inserted==1:
         user_pin=int(input("Enter the 4 digit pin number: "))
@@ -44,7 +42,7 @@ if inserted==1:
               elif option==4:
                      old_pin=int(input('enter the old pin number:'))
                      if old_pin==PIN:
-                            new_pin=int(inout('enter the new pin number'))
+                            new_pin=int(input('enter the new pin number'))
                             PIN=new_pin                           
                      else:
                             print('invalid pin mumber')
